@@ -1,0 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.movie-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.search {
+  margin-bottom: 30px;
+}
+
+.search__label-input {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.search__input {
+  display: block;
+  padding: 10px 15px;
+  width: 400px;
+  border: 1px solid #c9cdce;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.search__label-checkbox {
+  display: block;
+  font-size: 12px;
+  margin-left: 30px;
+  margin-top: -17px;
+}
